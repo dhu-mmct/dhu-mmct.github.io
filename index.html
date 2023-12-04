@@ -101,7 +101,7 @@
 
                 <!-- Github link -->
                 <span class="link-block">
-                  <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                  <a href="https://github.com/dhu-mmct/DHU-MMCT" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -176,26 +176,26 @@
   </section>
   <!-- End paper abstract -->
 
-  <!-- Youtube video -->
+  <!-- Image carousel -->
   <section class="hero is-small">
     <div class="hero-body">
       <div class="container is-max-desktop">
-        <!-- Paper video. -->
-        <h2 class="title is-3">Video</h2>
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-
-            <div class="publication-video">
-              <!-- Youtube embed code here -->
-              <iframe src="https://www.youtube.com/embed/8PCn5hLKNu4?si=8yvBeRNAJuxp77FZ" frameborder="0"
-                allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-          </div>
+        <h2 class="title is-3">Visual tracking results</h2>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/cross-linking.jpg" alt="MY ALT TEXT" />
+          <h2 class="content has-text-justified">
+            Visual tracking results on MMCT dataset. The same pedestrians appearing in different video sequences are
+            associated with lines of the same
+            color.
+          </h2>
         </div>
       </div>
     </div>
+    </div>
+    </div>
   </section>
-  <!-- End youtube video -->
+  <!-- End image carousel -->
   <!-- Image carousel -->
   <section class="hero is-small">
     <div class="hero-body">
@@ -216,6 +216,32 @@
     </div>
   </section>
   <!-- End image carousel -->
+
+  <!-- Video carousel -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <h2 class="title is-4">Dataset</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-video1">
+            <video poster="" id="video1" autoplay controls muted loop height="100%">
+              <!-- Your video file here -->
+              <source src="static/videos/6A.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video2">
+            <video poster="" id="video2" autoplay controls muted loop height="100%">
+              <!-- Your video file here -->
+              <source src="static/videos/6C.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <h2 class="content has-text-centered">
+          Exemplary video of sequences I and III in Scene F. The tracked boxes are also drawn in the video.
+      </div>
+    </div>
+  </section>
+  <!-- End video carousel -->
 
   <!--BibTex citation -->
   <section class="section" id="BibTeX">
