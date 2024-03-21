@@ -52,8 +52,8 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Multi-Moving Camera Pedestrian Tracking with a New Dataset and
-              Global Link Model</h1>
+            <h1 class="title is-1 publication-title">Towards Effective Multi-Moving Camera Tracking: A New Dataset and
+              Lightweight Link Model</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -72,7 +72,7 @@
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block">Donghua University</span>
+              <span class="author-block">Donghua University, TongJi University</span>
             </div>
 
             <div class="column has-text-centered">
@@ -202,14 +202,26 @@
     <div class="hero-body">
       <div class="container is-max-desktop">
         <h2 class="title is-3">Method</h2>
-        <div class="item">
-          <!-- Your image here -->
-          <img src="static/images/workflow.jpg" alt="MY ALT TEXT" />
-          <h2 class="content has-text-justified">
-            The workflow of our MTMMC tracking, composed of three major parts: single camera tracking (SCT), global link
-            model of Linker for refining SCT results, and cross-camera tracklet matching based on extracted features
-            from a Re-ID model.
-          </h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/workflow_for_website.jpg" alt="The workflow of our MTMMC tracking" />
+            <h2 class="subtitle has-text-justified">
+              The workflow of our MTMMC tracking, composed of three major parts: single camera tracking (SCT), global
+              link
+              model of Linker for refining SCT results, and cross-camera tracklet matching based on extracted features
+              from a Re-ID model.
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/linker_workflow.jpg" alt="The workflow of Linker" />
+            <h2 class="subtitle has-text-justified">
+              The workflow of the Linker model. LA refers to the linear assignment algorithm. Given the output short
+              tracklets of SCT trackers and the similarity score, a tracklet graph is constructed. After that, A
+              modified Jonker-Volgenant algorithm is leveraged to solve the assignment problem.
+            </h2>
+          </div>
         </div>
       </div>
     </div>
@@ -239,6 +251,7 @@
         </div>
         <h2 class="content has-text-centered">
           Exemplary video of sequences I and II in Scene F. The tracked boxes are also drawn in the video.
+        </h2>
       </div>
     </div>
   </section>
